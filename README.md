@@ -31,3 +31,17 @@ module.exports = {
   }
 }
 ```
+
+## Working Live Server
+
+> npm i webpack-dev-server -D
+
+```
+devServer: {
+  static: path.join(__dirname, 'dist'),
+  compress: true,
+  historyApiFallback: true,
+  port: 8080,
+  open: true,
+}
+```
